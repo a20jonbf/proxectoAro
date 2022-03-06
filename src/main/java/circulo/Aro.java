@@ -20,13 +20,7 @@ public class Aro {
         establecerRadio(valorRadio);
     }
 
-    public void establecerX(int valorX) {
-        coordenadaX=valorX;
-    }
 
-    public int obterX() {
-        return coordenadaX;
-    }
 
     public void establecerY(int valorY) {
         coordenadaY=valorY;
