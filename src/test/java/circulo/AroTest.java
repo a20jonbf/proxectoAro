@@ -44,25 +44,25 @@ public class AroTest {
     }
 
     /**
-     * Test of setCoordenadaY method, of class Aro.
+     * Test of establecerY method, of class Aro.
      */
     @Test
-    public void testSetCoordenadaY() {
+    public void testEstablecerY() {
         System.out.println("establecerY");
         int valorY = 0;
         Aro instance = new Aro();
-        instance.setCoordenadaY(valorY);
+        instance.establecerY(valorY);
     }
 
     /**
-     * Test of getCoordenadaY method, of class Aro.
+     * Test of obterY method, of class Aro.
      */
     @Test
-    public void testGetCoordenadaY() {
+    public void testObterY() {
         System.out.println("obterY");
         Aro instance = new Aro(0,0,0.1);
         int expResult = 0;
-        int result = instance.getCoordenadaY();
+        int result = instance.obterY();
         assertEquals(expResult, result);
     }
 
@@ -140,10 +140,10 @@ public class AroTest {
         System.out.println("trasladarCentro");
         Aro instance = new Aro();
         int resultx=instance.getCoordenadaX();
-        int resulty=instance.getCoordenadaY();
+        int resulty=instance.obterY();
         instance.trasladarCentro(5, 6);
         int resultnx = instance.getCoordenadaX();
-        int resultny = instance.getCoordenadaY();
+        int resultny = instance.obterY();
         assertEquals(resultx+5, resultnx);
         assertEquals(resulty+6, resultny);
     }
