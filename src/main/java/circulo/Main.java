@@ -25,9 +25,9 @@ public class Main {
         saida+="\nO diámetro é "+dousDixitos.format(circulo.obterDiametro());
         saida+="\nA circunferencia é "+dousDixitos.format(circulo.obterCircunferencia());
         saida+="\nA área é "+dousDixitos.format(circulo.obterSuperficie());
-        System.out.println(saida);
+        System.out.println(saida); // SonarLint indica que non é correcto, que hay que por logger.log en vez de System.out.println
         
-        System.out.println(saida);
+        System.out.println(saida); // SonarLint indica que non é correcto, que hay que por logger.log en vez de System.out.println
         System.exit(0);
     }
 
