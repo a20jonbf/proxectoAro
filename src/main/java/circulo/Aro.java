@@ -5,15 +5,28 @@ package circulo;
  * @author a20JonBF
  */
 public class Aro {
+
+    /**
+     * Constante para o radio mínimo dun aro
+     */
     public static final double MINIMO = 0.0;
 
     private int coordenadaX;
     private int coordenadaY;
     private double radio;
 
+    /**
+     * Constructor dun Aro sen parámetros
+     */
     public Aro() {
     }
 
+    /**
+     * Constructor con parámetros
+     * @param valorX
+     * @param valorY
+     * @param valorRadio
+     */
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
@@ -26,15 +39,26 @@ public class Aro {
 
     private static final double LIMITERADIO = 0.0;
 
-
+    /**
+     * método para obter o diámetro do Aro
+     * @return diámetro
+     */
     public double obterDiametro() {
         return radio * 2;
     }
 
+    /**
+     * Método para obter a circunferencia
+     * @return circunferencia
+     */
     public double obterCircunferencia() {
         return Math.PI * obterDiametro();
     }
 
+    /**
+     * método para obter a superficie
+     * @return superficie
+     */
     public double obterSuperficie() {
         return Math.PI * radio * radio;
     }
@@ -44,6 +68,11 @@ public class Aro {
         return "Centro = [" + coordenadaX + "," + coordenadaY + "]; Radio = " + radio;
     }
 
+    /**
+     * método para cambiar as coordenadas do centro do Aro
+     * @param trasladarX
+     * @param trasladarY
+     */
     public void trasladarCentro(int trasladarX, int trasladarY){
         coordenadaX=coordenadaX + trasladarX;
         coordenadaY=coordenadaY + trasladarY;
