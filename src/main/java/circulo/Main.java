@@ -11,10 +11,10 @@ public class Main {
         Aro circulo = new Aro(37,43,2.5);
         String saida =
                 "A coordenada X é "+circulo.getCoordenadaX()+
-                "\nA coordenada Y é "+circulo.obterY()+
+                "\nA coordenada Y é "+circulo.getCoordenadaY()+
                 "\nO radio é "+circulo.obterRadio();
         circulo.setCoordenadaX(35);
-        circulo.establecerY(20);
+        circulo.setCoordenadaY(20);
         circulo.establecerRadio(4.2);
         DecimalFormat dousDixitos = new DecimalFormat("0.00");
         saida+="\nO diámetro é "+dousDixitos.format(circulo.obterDiametro());
