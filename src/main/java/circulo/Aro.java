@@ -17,15 +17,22 @@ public class Aro {
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
-        setRadio(valorRadio);
+        establecerRadio(valorRadio);
     }
 
 
 
 
 
+    public void establecerRadio(double valorRadio) {
+
+        radio=(valorRadio < LIMITERADIO ? LIMITERADIO : valorRadio);
+    }
     private static final double LIMITERADIO = 0.0;
 
+    public double obterRadio() {
+        return radio;
+    }
 
     public double obterDiametro() {
         return radio * 2;

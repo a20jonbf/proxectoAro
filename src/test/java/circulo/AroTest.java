@@ -67,33 +67,33 @@ public class AroTest {
     }
 
     /**
-     * Test of setRadio method, of class Aro.
+     * Test of establecerRadio method, of class Aro.
      */
     @Test
     public void testEstablecerRadio() {
         System.out.println("establecerRadio");
         Aro instance = new Aro();
-        instance.setRadio(0.0);
-        instance.setRadio(0.1);
-        instance.setRadio(-0.1);
+        instance.establecerRadio(0.0);
+        instance.establecerRadio(0.1);
+        instance.establecerRadio(-0.1);
     }
 
     /**
-     * Test of getRadio method, of class Aro.
+     * Test of obterRadio method, of class Aro.
      */
     @Test
     public void testObterRadio() {
         System.out.println("obterRadio");
         Aro instance = new Aro(0,0,0.1);
-        double result = instance.getRadio();
+        double result = instance.obterRadio();
         assertEquals(0.1, result,0);
 
-        instance.setRadio(0.1);
-        result= instance.getRadio();
+        instance.establecerRadio(0.1);
+        result= instance.obterRadio();
         assertEquals(0.1, result,0);
 
-        instance.setRadio(-0.1);
-        result= instance.getRadio();
+        instance.establecerRadio(-0.1);
+        result= instance.obterRadio();
         assertEquals(0.0, result,0);
     }
 
