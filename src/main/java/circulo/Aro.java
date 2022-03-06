@@ -38,9 +38,8 @@ public class Aro {
 
     public void establecerRadio(double valorRadio) {
 
-        radio=(valorRadio < LIMITERADIO ? LIMITERADIO : valorRadio);
+        radio=(valorRadio < MINIMO ? MINIMO : valorRadio);
     }
-    private static final double LIMITERADIO = MINIMO;
 
     public double obterRadio() {
         return radio;
